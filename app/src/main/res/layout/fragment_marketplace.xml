@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".home">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/marketline"
+            android:layout_width="match_parent"
+            android:layout_height="542dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.48"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.596"
+            tools:listitem="@layout/marketitem">
+
+        </androidx.recyclerview.widget.RecyclerView>
+
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+<FrameLayout
+    android:layout_marginTop="80dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white">
+
+
+    <Button
+        android:id="@+id/sellitem"
+        android:layout_width="160dp"
+        android:layout_height="50dp"
+        android:text="Sell Item"
+        android:textColor="@color/black"
+        android:layout_gravity="end"
+
+        android:layout_marginBottom="10dp"
+        android:backgroundTint="@color/white"
+        android:layout_marginEnd="20dp"
+        app:cornerRadius="20dp" />
+
+
+    <TextView
+        android:layout_width="160dp"
+        android:layout_height="50dp"
+        android:text="Marketplace: "
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:layout_gravity="start"
+        android:textSize="26sp"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="10dp"
+        android:backgroundTint="@color/white"
+        android:layout_marginStart="20dp"
+        app:cornerRadius="20dp" />
+
+</FrameLayout>
+
+
+
+
+</FrameLayout>
+
+
+
+
+
+

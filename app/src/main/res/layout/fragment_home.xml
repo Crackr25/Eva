@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".home">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/timeline"
+            android:layout_width="368dp"
+            android:layout_height="542dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.48"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.596"
+            tools:listitem="@layout/timeline">
+
+        </androidx.recyclerview.widget.RecyclerView>
+
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+
+    <HorizontalScrollView
+        android:layout_marginTop="65dp"
+        android:id="@+id/horizontalScrollView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:background="@color/white"
+        android:visibility="visible">
+
+        <RelativeLayout
+            android:id="@+id/top"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:orientation="horizontal">
+
+
+            <Button
+                android:id="@+id/genre1"
+                android:layout_width="107dp"
+                android:layout_height="45dp"
+                android:layout_marginStart="16dp"
+                android:fadeScrollbars="true"
+                android:text="Painting"
+                android:textColor="#131313"
+                app:backgroundTint="@color/white"
+                app:cornerRadius="40dp"
+                app:strokeColor="#0C0C0C"
+                tools:layout_editor_absoluteX="30dp"
+                tools:layout_editor_absoluteY="226dp" />
+
+            <Button
+                android:id="@+id/genre2"
+                android:layout_width="107dp"
+                android:layout_height="45dp"
+                android:layout_marginStart="5dp"
+                android:layout_toEndOf="@+id/genre1"
+                android:fadeScrollbars="true"
+                android:text="Sketch"
+                android:textColor="#131313"
+                app:backgroundTint="@color/white"
+                app:cornerRadius="40dp"
+                app:strokeColor="#0C0C0C"
+                tools:layout_editor_absoluteX="30dp"
+                tools:layout_editor_absoluteY="226dp" />
+
+
+            <Button
+                android:id="@+id/genre3"
+                android:layout_width="107dp"
+                android:layout_height="45dp"
+                android:layout_marginStart="5dp"
+                android:layout_toEndOf="@+id/genre2"
+                android:fadeScrollbars="true"
+                android:text="Digital"
+                android:textColor="#131313"
+                app:backgroundTint="@color/white"
+                app:cornerRadius="40dp"
+                app:strokeColor="#0C0C0C"
+                tools:layout_editor_absoluteX="30dp"
+                tools:layout_editor_absoluteY="226dp" />
+
+
+            <Button
+                android:id="@+id/genre4"
+                android:layout_width="107dp"
+                android:layout_height="45dp"
+                android:layout_marginStart="5dp"
+                android:layout_toEndOf="@+id/genre3"
+                android:fadeScrollbars="true"
+                android:text="Sketch"
+                android:textColor="#131313"
+                app:backgroundTint="@color/white"
+                app:cornerRadius="40dp"
+                app:strokeColor="#0C0C0C"
+                tools:layout_editor_absoluteX="30dp"
+                tools:layout_editor_absoluteY="226dp" />
+
+
+
+            <Button
+                android:id="@+id/genre5"
+                android:layout_width="107dp"
+                android:layout_height="45dp"
+                android:layout_marginStart="2dp"
+                android:layout_toEndOf="@+id/genre4"
+                android:background="#F19c79"
+                android:textColor="#131313"
+                app:backgroundTint="@color/white"
+                app:cornerRadius="40dp"
+                app:strokeColor="#0C0C0C"
+                tools:layout_editor_absoluteX="30dp"
+                tools:layout_editor_absoluteY="226dp" />
+
+        </RelativeLayout>
+    </HorizontalScrollView>
+
+
+
+</FrameLayout>
+
+
+
+
+
+
