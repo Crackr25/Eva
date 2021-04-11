@@ -76,7 +76,7 @@ class home : Fragment() {
 
             val item = timelineItem(
                 pic,
-                R.drawable.username,
+                R.drawable.like,
                 R.drawable.react,
                 R.drawable.comment,
                 name,
@@ -120,7 +120,6 @@ class home : Fragment() {
             val cur = peoplelist[position]
             holder.imageview.setImageResource(cur.imageResource)
             holder.img1.setImageResource(cur.imageResource2)
-            holder.img2.setImageResource(cur.imageResource3)
             holder.img3.setImageResource(cur.imageResource4)
             holder.textview1.text = cur.text1
             holder.textview2.text = cur.text2
@@ -133,7 +132,6 @@ class home : Fragment() {
 
             val imageview: ImageView = itemView.findViewById(R.id.pic)
             val img1: ImageButton = itemView.findViewById(R.id.follow)
-            val img2: ImageButton = itemView.findViewById(R.id.react)
             val img3: ImageButton = itemView.findViewById(R.id.comment)
             val textview1: TextView = itemView.findViewById(R.id.username)
             val textview2: TextView = itemView.findViewById(R.id.tag)

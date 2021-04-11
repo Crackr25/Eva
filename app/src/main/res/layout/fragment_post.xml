@@ -1,7 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_height="wrap_content"
+    android:layout_width="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android" >
+
+
 <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/frem"
     android:layout_width="match_parent"
     android:background="@color/white"
     android:layout_height="600dp"
@@ -19,6 +25,8 @@
         android:textColor="@color/black"
         android:textSize="30sp"
         android:textStyle="bold" />
+
+
 
 
     <ImageButton
@@ -60,7 +68,7 @@
 
 
         <ImageButton
-            android:id="@+id/imageButton"
+            android:id="@+id/camera"
             android:layout_width="80dp"
             android:layout_height="80dp"
             android:layout_gravity="bottom"
@@ -92,7 +100,7 @@
         </ImageButton>
 
         <ImageButton
-            android:id="@+id/imageButton3"
+            android:id="@+id/gallery"
             android:layout_width="80dp"
             android:layout_height="80dp"
             android:layout_gravity="bottom"
@@ -110,5 +118,18 @@
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
-
 </FrameLayout>
+
+    <ImageView
+        android:layout_below="@+id/frem"
+        android:id="@+id/postpic"
+        android:layout_width="200dp"
+        android:src="@drawable/one"
+        android:layout_height="200dp"
+        android:layout_gravity="center_horizontal"/>
+
+
+
+
+
+</RelativeLayout>

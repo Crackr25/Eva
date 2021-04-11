@@ -4,7 +4,15 @@
     android:id="@+id/header"
     android:orientation="vertical"
     android:layout_width="match_parent"
-    android:layout_height="350px"
-    android:background="@drawable/header">
+    android:layout_height="450px">
+
+    <ImageView
+        android:layout_width="200dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="center_horizontal"
+        app:srcCompat="@mipmap/logo_foreground"
+        android:padding="3dp">
+
+    </ImageView>
 
 </LinearLayout>

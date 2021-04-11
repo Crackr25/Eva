@@ -1,174 +1,202 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:layout_width="match_parent"
-    android:backgroundTint="@color/white"
-    xmlns:anroid="http://schemas.android.com/tools"
-    android:background="@color/white"
-    android:layout_height="match_parent">
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
 
 
-
-    <androidx.cardview.widget.CardView
-        android:layout_margin="10dp"
+    <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="200dp"
-        android:id="@+id/Ppic1"
-        app:cardCornerRadius="20dp"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:backgroundTint="@color/white">
 
-        >
 
-        <ImageView
-            android:id="@+id/cover"
+        <FrameLayout
+            android:id="@+id/frem"
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:scaleType="centerCrop"
-            android:src="@drawable/two"
-            android:contentDescription="cover"/>
+            android:layout_height="wrap_content">
 
 
+            <com.google.android.material.appbar.AppBarLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:backgroundTint="@color/white"
+                android:paddingTop="10dp"
+                android:popupTheme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
 
-    </androidx.cardview.widget.CardView>
+                <androidx.appcompat.widget.Toolbar
+                    android:id="@+id/toolbar"
+                    android:layout_width="match_parent"
+                    android:layout_height="?attr/actionBarSize"
+                    android:layout_gravity="start"
+                    android:textColor="@color/black">
+
+                </androidx.appcompat.widget.Toolbar>
 
 
-    <androidx.cardview.widget.CardView
+            </com.google.android.material.appbar.AppBarLayout>
+        </FrameLayout>
 
-        android:layout_width="100dp"
-        android:layout_marginTop="135dp"
-        android:layout_marginStart="20dp"
-        android:layout_height="100dp"
-        android:id="@+id/Profilepic"
-        app:cardCornerRadius="40dp">
 
-        <ImageView
-            android:id="@+id/Ppic"
-            anroid:scaleType="centerCrop"
+        <androidx.cardview.widget.CardView
+            android:id="@+id/Ppic1"
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:src="@drawable/gwapo" />
+            android:layout_height="200dp"
+            android:layout_below="@+id/frem"
+            android:layout_margin="10dp"
+            app:cardCornerRadius="20dp"
 
-    </androidx.cardview.widget.CardView>
+            >
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Username"
-        android:id="@+id/Username"
-        android:layout_below="@+id/Profilepic"
-        android:textSize="22sp"
-        android:textColor="@color/black"
-        android:textStyle="bold"
-        android:layout_marginStart="15dp">
-
-    </TextView>
-
- <TextView
-     android:id="@+id/bio"
-     android:layout_width="wrap_content"
-     android:layout_height="wrap_content"
-     android:text="Digital, Sketch, Painting"
-     android:layout_below="@id/Username"
-     android:textSize="14sp"
-     android:layout_marginStart="15sp"
-     android:textColor="@color/black">
- </TextView>
-
- <TextView
-     android:id="@+id/numfollowers"
-     android:layout_width="wrap_content"
-     android:layout_height="wrap_content"
-     android:text="140"
-     android:layout_marginStart="90dp"
-     android:layout_toEndOf="@id/Username"
-     android:textSize="20sp"
-     android:textStyle="bold"
-     android:layout_below="@+id/Profilepic"
-     android:textColor="@color/black">
-
- </TextView>
-    <TextView
-     android:layout_width="wrap_content"
-     android:layout_height="wrap_content"
-     android:text="followers"
-        android:id="@+id/dummy"
-     android:layout_below="@id/numfollowers"
-        android:layout_toEndOf="@id/Username"
-        android:textSize="12sp"
-     android:layout_marginStart="90dp"
-     android:textColor="@color/black">
-    </TextView>
-
-    <TextView
-     android:id="@+id/numfollowing"
-     android:layout_width="wrap_content"
-     android:layout_height="wrap_content"
-     android:text="150"
-     android:layout_marginStart="60dp"
-     android:layout_toEndOf="@id/numfollowers"
-     android:textSize="20sp"
-     android:textStyle="bold"
-     android:layout_below="@+id/Profilepic"
-     android:textColor="@color/black">
-
- </TextView>
-    <TextView
-     android:layout_width="wrap_content"
-     android:layout_height="wrap_content"
-     android:text="following"
-        android:layout_marginStart="40dp"
-        android:layout_toEndOf="@+id/dummy"
-     android:layout_below="@id/numfollowing"
-        android:textSize="12sp"
-     android:textColor="@color/black">
-
- </TextView>
-
-    <Button
-        android:id="@+id/gridview"
-        android:layout_width="149dp"
-        android:layout_height="50dp"
-        android:layout_below="@+id/bio"
-        android:layout_alignParentStart="true"
-        android:backgroundTint="@color/white"
-        android:text="Grid View"
-        android:layout_marginTop="10dp"
-        android:layout_marginStart="30dp"
-        android:textColorHighlight="#f19c79"
-        android:textColor="@color/black"
-        app:cornerRadius="10dp">
-
-    </Button>
-    <Button
-        android:id="@+id/horizontalScrollView"
-        android:layout_width="149dp"
-        android:layout_height="50dp"
-        android:layout_below="@+id/bio"
-        android:backgroundTint="@color/white"
-        android:layout_marginTop="10dp"
-        android:text="Scroll View"
-        android:layout_alignParentEnd="true"
-        android:layout_marginEnd="30dp"
-        android:textColorHighlight="#f19c79"
-        android:textColor="@color/black"
-        app:cornerRadius="10dp">
-
-    </Button>
+            <ImageView
+                android:id="@+id/cover"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:contentDescription="cover"
+                android:scaleType="centerCrop"
+                android:src="@drawable/two" />
 
 
+        </androidx.cardview.widget.CardView>
 
 
-    <FrameLayout
-        android:layout_width="match_parent"
-        android:layout_alignParentBottom="true"
-        android:layout_height="440dp"
-        android:id="@+id/replacement2">
+        <androidx.cardview.widget.CardView
 
-    </FrameLayout>
+            android:id="@+id/Profilepic"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="210dp"
+            app:cardCornerRadius="50dp">
+
+            <ImageView
+                android:id="@+id/Ppic"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="centerCrop"
+                android:src="@drawable/gwapo" />
+
+        </androidx.cardview.widget.CardView>
+
+        <TextView
+            android:id="@+id/Username"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/Profilepic"
+            android:layout_marginStart="15dp"
+            android:text="Username"
+            android:textColor="@color/black"
+            android:textSize="22sp"
+            android:textStyle="bold">
+
+        </TextView>
+
+        <TextView
+            android:id="@+id/bio"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/Username"
+            android:layout_marginStart="15sp"
+            android:text="Digital, Sketch, Painting"
+            android:textColor="@color/black"
+            android:textSize="14sp"></TextView>
 
 
+        <TextView
+            android:id="@+id/numfollowers"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/Profilepic"
+            android:layout_marginStart="90dp"
+            android:layout_toEndOf="@id/Username"
+            android:text="140"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:textStyle="bold">
+
+        </TextView>
+
+        <TextView
+            android:id="@+id/dummy"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/numfollowers"
+            android:layout_marginStart="90dp"
+            android:layout_toEndOf="@id/Username"
+            android:text="followers"
+            android:textColor="@color/black"
+            android:textSize="12sp"></TextView>
+
+        <TextView
+            android:id="@+id/numfollowing"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/Profilepic"
+            android:layout_marginStart="60dp"
+            android:layout_toEndOf="@id/numfollowers"
+            android:text="150"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:textStyle="bold">
+
+        </TextView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/numfollowing"
+            android:layout_marginStart="40dp"
+            android:layout_toEndOf="@+id/dummy"
+            android:text="following"
+            android:textColor="@color/black"
+            android:textSize="12sp">
+
+        </TextView>
+
+        <Button
+            android:id="@+id/gridview"
+            android:layout_width="149dp"
+            android:layout_height="50dp"
+            android:layout_below="@+id/bio"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="10dp"
+            android:backgroundTint="@color/white"
+            android:text="Grid View"
+            android:textColor="@color/black"
+            app:cornerRadius="10dp">
+  
+        </Button>
+
+        <Button
+            android:id="@+id/horizontalScrollView"
+            android:layout_width="149dp"
+            android:layout_height="50dp"
+            android:layout_below="@+id/bio"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="30dp"
+            android:backgroundTint="@color/white"
+            android:text="Scroll View"
+            android:textColor="@color/black"
+            android:textColorHighlight="#f19c79"
+            app:cornerRadius="10dp">
+
+        </Button>
 
 
+        <FrameLayout
+            android:id="@+id/replacement2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/bio">
+
+        </FrameLayout>
 
 
+    </RelativeLayout>
 
-</RelativeLayout>
+</FrameLayout>

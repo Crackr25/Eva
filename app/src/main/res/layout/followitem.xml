@@ -21,7 +21,7 @@
         android:layout_width="100dp"
         android:layout_height="100dp"
         android:id="@+id/Ppic1"
-        app:cardCornerRadius="40dp">
+        app:cardCornerRadius="50dp">
 
 
     <ImageView

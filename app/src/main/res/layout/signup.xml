@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
     <EditText
-        android:id="@+id/editTextTextPersonName"
+        android:id="@+id/Usernamemain"
         android:layout_width="327dp"
         android:layout_height="52dp"
         android:background="@drawable/rounded_edittext2"
@@ -21,9 +21,8 @@
         app:layout_constraintVertical_bias="0.276" />
 
     <EditText
-        android:id="@+id/editTextNumber"
+        android:id="@+id/number"
         android:layout_width="327dp"
-
         android:layout_height="52dp"
         android:background="@drawable/rounded_edittext"
         android:drawableStart="@drawable/number"
@@ -38,7 +37,7 @@
         app:layout_constraintVertical_bias="0.376" />
 
     <EditText
-        android:id="@+id/editTextTextEmailAddress2"
+        android:id="@+id/emailadd"
         android:layout_width="327dp"
         android:layout_height="52dp"
         android:background="@drawable/rounded_edittext"
@@ -55,7 +54,7 @@
         app:layout_constraintVertical_bias="0.476" />
 
     <EditText
-        android:id="@+id/editTextTextPassword2"
+        android:id="@+id/pass"
         android:layout_width="327dp"
         android:layout_height="52dp"
         android:background="@drawable/rounded_edittext"
@@ -73,7 +72,7 @@
         app:layout_constraintVertical_bias="0.576" />
 
     <EditText
-        android:id="@+id/editTextTextPassword3"
+        android:id="@+id/pass1"
         android:layout_width="327dp"
         android:layout_height="52dp"
         android:background="@drawable/rounded_edittext"

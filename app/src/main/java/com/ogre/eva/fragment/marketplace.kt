@@ -112,11 +112,8 @@ class marketplace : Fragment() {
             val imageview: ImageView = itemView.findViewById(R.id.pic2)
             val imageview2: ImageView = itemView.findViewById(R.id.pic3)
             val textview1: TextView = itemView.findViewById(R.id.tag1)
-            val textview2: TextView = itemView.findViewById(R.id.title1)
             val textview3: TextView = itemView.findViewById(R.id.tag2)
-            val textview4: TextView = itemView.findViewById(R.id.price2)
-            val textview5: TextView = itemView.findViewById(R.id.price1)
-            val textview6: TextView = itemView.findViewById(R.id.title2)
+
         }
 
     }

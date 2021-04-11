@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="200dp"
+        android:layout_height="80dp"
+        android:layout_marginLeft="90dp"
+        android:layout_marginTop="100dp"
+        android:gravity="center_horizontal"
+        android:text="What's Your Mood For This Day?"
+        android:textAlignment="center"
+        android:textColor="#0E0E0E"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/joy"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:text="Joy"
+        android:layout_gravity="center_horizontal"
+        android:textColor="#f19c79"
+        android:layout_marginTop="190dp"
+        android:textSize="18sp"
+        app:backgroundTint="#FFFFFF" />
+
+    <Button
+        android:id="@+id/sad"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:text="SAD"
+        android:textColor="#f19c79"
+        android:textSize="18sp"
+        android:layout_marginTop="250dp"
+        app:backgroundTint="#FFFFFF"
+         android:layout_gravity="center_horizontal" />
+
+    <Button
+        android:id="@+id/disgust"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:text="DISGUST"
+        android:textColor="#f19c79"
+        android:textSize="18sp"
+        android:layout_marginTop="310dp"
+        app:backgroundTint="#FFFFFF"
+        android:layout_gravity="center_horizontal"
+        app:strokeColor="#000000" />
+
+    <Button
+        android:id="@+id/anger"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:text="ANGER"
+        android:textColor="#f19c79"
+        android:textSize="18sp"
+        android:layout_marginTop="370dp"
+        app:backgroundTint="#FFFFFF"
+        android:layout_gravity="center_horizontal"
+        app:strokeColor="#000000" />
+
+    <Button
+        android:id="@+id/fear"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:text="FEAR"
+        android:textColor="#f19c79"
+        android:textSize="18sp"
+        android:layout_marginTop="430dp"
+        app:backgroundTint="#FFFFFF"
+        android:layout_gravity="center_horizontal"
+        app:strokeColor="#000000" />
+</FrameLayout>

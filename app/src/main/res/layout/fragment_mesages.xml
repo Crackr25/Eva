@@ -5,7 +5,6 @@
     android:layout_width="300dp"
     android:layout_height="400dp"
     tools:context=".mesages"
-    android:background="#F6f4D2"
     android:layout_gravity="center_vertical"
     android:layout_margin="40dp">
 
@@ -13,7 +12,7 @@
     <ImageView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:src="@drawable/comment"
+        android:src="@drawable/bg"
         android:padding="40dp">
 
     </ImageView>

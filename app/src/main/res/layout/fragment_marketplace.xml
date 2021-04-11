@@ -14,18 +14,16 @@
 
         <androidx.recyclerview.widget.RecyclerView
             android:id="@+id/marketline"
-            android:layout_width="match_parent"
-            android:layout_height="542dp"
+            android:layout_width="373dp"
+            android:layout_height="500dp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.48"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.596"
+            app:layout_constraintVertical_bias="0.55"
             tools:listitem="@layout/marketitem">
 
         </androidx.recyclerview.widget.RecyclerView>
-
 
 
     </androidx.constraintlayout.widget.ConstraintLayout>

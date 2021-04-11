@@ -9,7 +9,7 @@
 
 
     <EditText
-        android:id="@+id/editTextTextEmailAddress"
+        android:id="@+id/EmailAddress"
         android:layout_width="331dp"
         android:layout_height="53dp"
         android:background="@drawable/rounded_edittext2"
@@ -28,8 +28,10 @@
         tools:layout_contraintHeight="wrap_content" />
 
 
+
+
     <EditText
-        android:id="@+id/editTextTextPassword"
+        android:id="@+id/Password"
         android:layout_width="327dp"
         android:layout_height="57dp"
         android:background="@drawable/rounded_edittext"
@@ -80,13 +82,12 @@
         android:id="@+id/textView2"
         android:layout_width="194dp"
         android:layout_height="27dp"
-        android:layout_marginEnd="8dp"
         android:text="Don't have an account yet?"
         android:textColor="#A44A3f"
         android:textSize="16sp"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.201"
+        app:layout_constraintEnd_toStartOf="@+id/sign_up"
+        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.924" />
@@ -123,18 +124,6 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.35" />
 
-    <ImageView
-        android:layout_width="230dp"
-        android:layout_height="215dp"
-        android:background="@drawable/ogol"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.496"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.08">
-
-    </ImageView>
 
     <TextView
         android:id="@+id/textView7"
@@ -149,6 +138,18 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.395" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="171dp"
+        android:layout_height="188dp"
+        app:layout_constraintBottom_toTopOf="@+id/textView7"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.54"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.911"
+        app:srcCompat="@mipmap/logo_foreground" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
